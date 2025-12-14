@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        .imgc {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="imgc">
+        <img src="{{ url_for('static', filename='Assets/making-doctor-appointment-infographic-chart-design-template_106317-30823.jpg') }}"
+            class="img-fluid" alt="ortho-physio">
+    </div>
+    <section class="about_section layout_padding">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="{{ url_for('static',filename='Assets/Random_forest.png')}}" alt=""
+                            style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                Accuracy
+                            </h2>
+                        </div>
+                        <p>
+                            In our osteoporosis prediction project, we used machine learning to find out whether a
+                            person has a high chance of getting weak bones. The model learns from many patient data like
+                            age, gender, bone density, calcium level, lifestyle, etc. After training the model, we
+                            checked how correctly it can predict osteoporosis. This is called accuracy. Our model showed
+                            good accuracy, which means it gives correct results most of the time. A higher accuracy
+                            shows that the machine learning model understands the patterns in the data and can help
+                            doctors make better and faster decisions. This accurate prediction can help in early
+                            detection and early treatment so that people can avoid bone fractures and stay healthy.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

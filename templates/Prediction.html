@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 7px 0 15px 0;
+            border: 1px solid #999;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        button {
+            width: 100%;
+            background: #0b7754;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #05583e;
+        }
+
+
+        .home-img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <img src="{{url_for('static',filename='Assets/360_F_702830343_Y6xgU6ubC17ZZo7q1YwASskRPTbTk1il.jpg')}}"
+        style="width:100%" />
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding " style="margin-top: 5vh;">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="{{url_for('static',filename='Assets/about-img.jpg')}}" class="home-img" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                Prediction
+                            </h2>
+                        </div>
+                        <p>
+                        <form action="/prediction" method="POST">
+                            <input type="hidden" name="csrfmiddlewaretoken"
+                                value="9fO2XomXS19Cn6jrcyYiBFKAOVtkDApvzqP04wbI9FrSZ5Lrkuwtt1MaEBLXld1N">
+
+                            <!-- AGE -->
+                            <label>Age</label>
+                            <input type="number" name="Age" required>
+
+                            <!-- GENDER -->
+                            <label>Gender</label>
+                            <select name="Gender" required>
+                                <option value="">Select</option>
+                                <option value="0">Male</option>
+                                <option value="1">Female</option>
+                            </select>
+
+                            <!-- HORMONE -->
+                            <label>Hormone Level</label>
+                            <select name="Hormone" required>
+                                <option value="">Select</option>
+                                <option value="0">Low</option>
+                                <option value="1">Normal</option>
+                                <option value="2">High</option>
+                            </select>
+
+                            <!-- FAMILY HISTORY -->
+                            <label>Family History</label>
+                            <select name="FHistory" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+                            <!-- WEIGHT -->
+                            <label>Weight (kg)</label>
+                            <select name="Weight" required>
+                                <option value="">Select</option>
+                                <option value="0">Normal</option>
+                                <option value="1">Under Weight</option>
+                            </select>
+
+                            <!-- CALCIUM INTAKE -->
+                            <label>Calcium Intake</label>
+                            <select name="CalciumIn" required>
+                                <option value="">Select</option>
+                                <option value="0">Low</option>
+                                <option value="1">Adequate</option>
+                            </select>
+
+                            <!-- ACTIVITY -->
+                            <label>Physical Activity</label>
+                            <select name="Activity" required>
+                                <option value="">Select</option>
+                                <option value="0">Low</option>
+                                <option value="1">Medium</option>
+                                <option value="2">High</option>
+                            </select>
+
+                            <!-- SMOKING -->
+                            <label>Smoking</label>
+                            <select name="Smoking" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+                            <!-- MEDICAL CONDITION -->
+                            <label>Medical Condition</label>
+                            <select name="MedCondition" required>
+                                <option value="">Select</option>
+                                <option value="0">None</option>
+                                <option value="1">Mild</option>
+                                <option value="2">Chronic</option>
+                            </select>
+
+                            <!-- FRACTURES -->
+                            <label>Fractures</label>
+                            <select name="Fractures" required>
+                                <option value="">Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+
+
+
+                            <!-- SUBMIT -->
+                            <button type="submit" style="margin-top: 3vh;">Predict</button>
+
+                            {% if result %}
+                            <h4 style="color:green; margin-top:20px;">
+                                Result: {{ result }}
+                            </h4>
+                            {% endif %}
+
+
+                        </form>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'footer.html' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+    <style>
+        .home-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .home-img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .home-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div><img
+            src="{{ url_for('static', filename='Assets/professional-doctor-patient-medical-check-up-scan-interpretation.jpg') }}"
+            class="img-fluid" alt="ortho-physio"></div>
+    <section class="home-section container my-5">
+        <div class="row align-items-center">
+
+            <!-- Left Image -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 text-center">
+                <img src="{{ url_for('static', filename='Assets/about-img.jpg') }}" alt="Doctor"
+                    class="home-img img-fluid">
+            </div>
+
+            <!-- Right Text -->
+            <div class="col-lg-6 col-md-12">
+                <h2 class="home-title">HOME</h2>
+                <p class="home-text">
+                    Osteoporosis is a widespread condition characterized by reduced bone density, leading to an
+                    increased risk of fractures.
+                    Early prediction and intervention are crucial for preventing fractures and improving patient
+                    outcomes.
+                    More sophisticated procedures must be investigated because traditional diagnostic methods, such bone
+                    mineral density (BMD) testing,
+                    frequently fall short in identifying osteoporosis in its early stages. Using a range of clinical,
+                    demographic, and lifestyle characteristics,
+                    this research explores the use of machine learning (ML) algorithms to predict osteoporosis risk.
+                    Several machine learning models, such as decision trees,
+                    support vector machines, random forests, and neural networks, were used to assess data from multiple
+                    sources, including age, gender,
+                    medical history, physical activity, and eating habits. The main goal was to create a precise,
+                    data-driven model for early osteoporosis
+                    detection so that prompt actions could be taken to enhance bone health and prevent fractures.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    {% include 'footer.html' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
