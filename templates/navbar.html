@@ -12,37 +12,31 @@
             padding: 20px;
         }
 
-        .navbar-light .navbar-toggler-icon {
-            filter: invert(1);
-            /* Option 1 (simple) */
+        .navbar-toggler {
+            border-color: white;
         }
 
-        /* Brand text styling */
         .brand-text {
             font-family: 'Nunito', sans-serif;
             font-size: 25px;
             font-weight: 600;
             color: white;
-            /* Blue label behind ORTHOC */
-            /* padding: 4px 10px; */
         }
 
-        /* Menu links */
         .nav-link {
             color: white !important;
             font-weight: 500;
             letter-spacing: 1px;
-            /* font-size: 2vh; */
             margin-right: 15px;
             white-space: nowrap;
         }
 
-        .nav-link:hover {
-            opacity: 0.8;
-        }
-
-        .navbar-toggler {
-            border-color: white;
+        /* --- LAYOUT FIX --- */
+        /* Only add the 20% margin on Desktop (large screens) */
+        /* This fixes the mobile menu being squashed */
+        @media (min-width: 992px) {
+            .desktop-margin-left { margin-left: 20%; }
+            .desktop-margin-right { margin-right: 20%; }
         }
     </style>
     <title>Responsive Navbar</title>
@@ -50,36 +44,40 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navuser">
-    <!-- Brand -->
-    <a class="navbar-brand" href="index.html" style="margin-left: 20%;">
-        <img src="{{ url_for('static', filename='Assets/cartilage.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="brand-text">ORTHOC</span>
-    </a>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark navuser">
+        <a class="navbar-brand desktop-margin-left" href="index.html">
+            <img src="{{ url_for('static', filename='Assets/cartilage.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span class="brand-text">ORTHOC</span>
+        </a>
 
+        <button id="manual-toggler" class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse desktop-margin-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="/ourteam">OUR TEAM</a></li>
+                <li class="nav-item"><a class="nav-link" href="/accuracy">ACCURACY</a></li>
+                <li class="nav-item"><a class="nav-link" href="/prediction">PREDICTION</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 20%;">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="/ourteam">OUR TEAM</a></li>
-            <li class="nav-item"><a class="nav-link" href="/accuracy">ACCURACY</a></li>
-            <li class="nav-item"><a class="nav-link" href="/prediction">PREDICTION</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">CONTACT US</a></li>
-        </ul>
-    </div>
-
-
-</nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // When the hamburger button is clicked...
+            $("#manual-toggler").click(function() {
+                // Manually tell the menu to toggle
+                $("#navbarNav").collapse('toggle');
+            });
+        });
+    </script>
 </body>
 
 </html>
