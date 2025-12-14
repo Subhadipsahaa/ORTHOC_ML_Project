@@ -92,7 +92,7 @@ http://127.0.0.1:5000
 
 ___
 
-### requirement.txt
+### requirements.txt
 Flask==3.0.0
 pandas==2.2.2
 numpy==1.26.4
