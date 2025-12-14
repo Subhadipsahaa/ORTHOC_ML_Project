@@ -70,9 +70,9 @@ orthodic/ │── app.py
 ## Installation and Setup (Local Machine)
 
 ### Step 1: Clone Repository
-```bash
+bash
 git clone <repository-url>
-cd orthodic```
+cd orthodic
 
 ___
 
