@@ -74,8 +74,6 @@ bash
 git clone <repository-url>
 cd orthodic
 
-___
-
 ### Step 2: Create Virtual Environment
 python -m venv venv
 source venv/bin/activate      # Linux / Mac
@@ -87,8 +85,12 @@ pip install -r requirements.txt
 ### Step 4: Run Application
 python app.py
 
+___
+
 ### Open your browser and visit:
 http://127.0.0.1:5000
+
+___
 
 ### requirement.txt
 Flask==3.0.0
@@ -96,6 +98,8 @@ pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.4.2
 joblib==1.4.2
+
+___
 
 ### Deployment
 
@@ -126,7 +130,7 @@ Smoking	Yes
 Fractures	Yes
 
 
-## Predicted Output:
+### Predicted Output:
 
 Osteoporosis Detected
 
