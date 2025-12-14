@@ -72,7 +72,7 @@ orthodic/ │── app.py
 ### Step 1: Clone Repository
 ```bash
 git clone <repository-url>
-cd orthodic
+cd orthodic```
 
 ___
 
