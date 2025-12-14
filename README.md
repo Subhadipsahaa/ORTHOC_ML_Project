@@ -74,6 +74,8 @@ orthodic/ │── app.py
 git clone <repository-url>
 cd orthodic
 
+___
+
 ### Step 2: Create Virtual Environment
 python -m venv venv
 source venv/bin/activate      # Linux / Mac
@@ -95,7 +97,7 @@ numpy==1.26.4
 scikit-learn==1.4.2
 joblib==1.4.2
 
-###Deployment
+### Deployment
 
 The application is deployed on PythonAnywhere using:
 
