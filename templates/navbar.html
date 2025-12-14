@@ -31,12 +31,14 @@
             white-space: nowrap;
         }
 
-        /* --- LAYOUT FIX --- */
-        /* Only add the 20% margin on Desktop (large screens) */
-        /* This fixes the mobile menu being squashed */
         @media (min-width: 992px) {
-            .desktop-margin-left { margin-left: 20%; }
-            .desktop-margin-right { margin-right: 20%; }
+            .desktop-margin-left {
+                margin-left: 20%;
+            }
+
+            .desktop-margin-right {
+                margin-right: 20%;
+            }
         }
     </style>
     <title>Responsive Navbar</title>
@@ -46,7 +48,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark navuser">
         <a class="navbar-brand desktop-margin-left" href="index.html">
-            <img src="{{ url_for('static', filename='Assets/cartilage.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="{{ url_for('static', filename='Assets/cartilage.png') }}" width="30" height="30"
+                class="d-inline-block align-top" alt="">
             <span class="brand-text">ORTHOC</span>
         </a>
 
@@ -70,10 +73,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            // When the hamburger button is clicked...
-            $("#manual-toggler").click(function() {
-                // Manually tell the menu to toggle
+        $(document).ready(function () {
+            $("#manual-toggler").click(function () {
                 $("#navbarNav").collapse('toggle');
             });
         });
