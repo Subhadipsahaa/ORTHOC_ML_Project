@@ -86,8 +86,6 @@ pip install -r requirements.txt
 ### Step 4: Run Application
 python app.py
 
-___
-
 ### Open your browser and visit:
 http://127.0.0.1:5000
 
@@ -112,9 +110,9 @@ The application is deployed on PythonAnywhere using:
 
  - WSGI configuration
 
-Application URL format:
+Application URL:
 
-https://<username>.pythonanywhere.com
+https://subhadipsaha.pythonanywhere.com
 
 ---
 
