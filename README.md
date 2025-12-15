@@ -73,7 +73,6 @@ orthodic/
  
     │   ├── footer.html
 
-
 │ ├── static/ 
 
 │   └── Assets/ 
