@@ -57,14 +57,14 @@ orthodic/ <br>
     │── osteoporosis_trained_model.pkl <br>
     │ ├── templates/ <br>
     │ &nbsp;├── index.html<br>
-    │   ├── Prediction.html<br>
-    │   ├── accuracy.html<br>
-    │   ├── ourteam.html <br>
-    │   ├── navbar.html<br>
-    │   ├── footer.html<br>
+    │ &nbsp;├── Prediction.html<br>
+    │ &nbsp;├── accuracy.html<br>
+    │ &nbsp;├── ourteam.html <br>
+    │ &nbsp;├── navbar.html<br>
+    │ &nbsp;├── footer.html<br>
     │ ├── static/ <br>
-    │   └── Assets/ <br>
-    │       └── (images and icons)<br>
+    │ &nbsp;└── Assets/ <br>
+    │ &nbsp;└── (images and icons)<br>
 
 ---
 
