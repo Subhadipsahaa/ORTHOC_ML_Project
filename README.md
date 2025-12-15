@@ -52,19 +52,19 @@ The model was trained using real-world inspired patient data including:
 
 ## 📂 Project Structure
 orthodic/ <br>
-    &nbsp;&nbsp;&nbsp;│── app.py <br>
-    &nbsp;&nbsp;&nbsp;│── requirements.txt <br>
-    &nbsp;&nbsp;&nbsp;│── osteoporosis_trained_model.pkl <br>
-    &nbsp;&nbsp;&nbsp;│ ├── templates/ <br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── index.html<br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── Prediction.html<br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── accuracy.html<br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── ourteam.html <br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── navbar.html<br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── footer.html<br>
-    &nbsp;&nbsp;&nbsp;│ ├── static/ <br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└── Assets/ <br>
-    &nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└── (images and icons)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│── app.py <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│── requirements.txt <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│── osteoporosis_trained_model.pkl <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ ├── templates/ <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── index.html<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── Prediction.html<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── accuracy.html<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── ourteam.html <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── navbar.html<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;├── footer.html<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ ├── static/ <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└── Assets/ <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│ &nbsp;&nbsp;&nbsp;└── (images and icons)<br>
 
 ---
 
