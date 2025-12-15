@@ -55,7 +55,7 @@ orthodic/ <br>
     │── app.py <br>
     │── requirements.txt <br>
     │── osteoporosis_trained_model.pkl <br>
-    │ ├── templates/<br>
+    │ ├── templates/ <br>
     │   ├── index.html<br>
     │   ├── Prediction.html<br>
     │   ├── accuracy.html<br>
