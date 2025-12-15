@@ -52,7 +52,7 @@ The model was trained using real-world inspired patient data including:
 
 ## 📂 Project Structure
 orthodic/ 
-    │── app.py 
+    │── app.py <br>
     │── requirements.txt 
     │── osteoporosis_trained_model.pkl 
     │ ├── templates/
