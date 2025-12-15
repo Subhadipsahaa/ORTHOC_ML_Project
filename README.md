@@ -56,15 +56,15 @@ orthodic/ <br>
     │── requirements.txt <br>
     │── osteoporosis_trained_model.pkl <br>
     │ ├── templates/ <br>
-    │ &nbsp;├── index.html<br>
-    │ &nbsp;├── Prediction.html<br>
-    │ &nbsp;├── accuracy.html<br>
-    │ &nbsp;├── ourteam.html <br>
-    │ &nbsp;├── navbar.html<br>
-    │ &nbsp;├── footer.html<br>
+    │ &nbsp;&nbsp;&nbsp;├── index.html<br>
+    │ &nbsp;&nbsp;&nbsp;├── Prediction.html<br>
+    │ &nbsp;&nbsp;&nbsp;├── accuracy.html<br>
+    │ &nbsp;&nbsp;&nbsp;├── ourteam.html <br>
+    │ &nbsp;&nbsp;&nbsp;├── navbar.html<br>
+    │ &nbsp;&nbsp;&nbsp;├── footer.html<br>
     │ ├── static/ <br>
-    │ &nbsp;└── Assets/ <br>
-    │ &nbsp;└── (images and icons)<br>
+    │ &nbsp;&nbsp;&nbsp;└── Assets/ <br>
+    │ &nbsp;&nbsp;&nbsp;└── (images and icons)<br>
 
 ---
 
