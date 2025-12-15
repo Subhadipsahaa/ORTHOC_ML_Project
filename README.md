@@ -51,21 +51,20 @@ The model was trained using real-world inspired patient data including:
 ---
 
 ## 📂 Project Structure
-orthodic/ 
+orthodic/ <br>
     │── app.py <br>
-    │── requirements.txt 
-    │── osteoporosis_trained_model.pkl 
-    │ ├── templates/
-    │   ├── index.html
-    │   ├── Prediction.html
-    │   ├── accuracy.html
-    │   ├── ourteam.html 
-    │   ├── navbar.html
-    │   ├── footer.html
-    │ ├── static/ 
-    │   └── Assets/ 
-    │       └── (images and icons)
-
+    │── requirements.txt <br>
+    │── osteoporosis_trained_model.pkl <br>
+    │ ├── templates/<br>
+    │   ├── index.html<br>
+    │   ├── Prediction.html<br>
+    │   ├── accuracy.html<br>
+    │   ├── ourteam.html <br>
+    │   ├── navbar.html<br>
+    │   ├── footer.html<br>
+    │ ├── static/ <br>
+    │   └── Assets/ <br>
+    │       └── (images and icons)<br>
 
 ---
 
